@@ -1,0 +1,21 @@
+{
+	"verticals" : [
+		{
+			"vertical_id": "AE_WE",
+			"type": "Weather Monitoring"
+		},
+		{
+			"vertical_id": "AE_EM",
+			"type": "Energy Monitoring"
+		},
+		{
+			"vertical_id": "AE_SL",
+			"type": "Solar Monitoring"
+		},
+		{
+			"vertical_id":"AE_AQ",
+			"type":"Air Quality Monitoring"
+		}
+		
+	]
+}

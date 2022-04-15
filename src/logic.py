@@ -87,7 +87,7 @@ def read_verticals(config_file):
 def main():
 	vert_config = read_verticals('verticalconfig.json')
 	api_key = os.getenv('API_KEY')
-	if introspect_api_key(api_key) != 200:
+	if introspect_api_key(api_key)[0] != 200:
 		print("Invalid API key. Generating New....")
 		api_key = get_api_key(os.getenv('USER_EMAIL'), os.getenv('USER_PASSWORD'))
 	update_environment(api_key)

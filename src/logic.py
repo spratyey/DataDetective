@@ -1,4 +1,5 @@
 import matplotlib
+from iiith_api_functions import get_api_key, introspect_api_key
 from vertical import Vertical
 from sensor import Sensor_node
 from header import *
@@ -72,27 +73,41 @@ def nan_analysis(readings, fpath):
 	plt.show()
 
 	
-
+def read_verticals(config_file):
+	# load config file
+	with open(config_file) as json_file:
+		data = json.load(json_file)
+		print(data)
+		return data
 
 	
 
 
 
 def main():
+	vert_config = read_verticals('verticalconfig.json')
+	api_key = os.getenv('API_KEY')
+	if introspect_api_key(api_key) != 200:
+		print("Invalid API key. Generating New....")
+		api_key = get_api_key(os.getenv('USER_EMAIL'), os.getenv('USER_PASSWORD'))
+	update_environment(api_key)
+	verticals = []
 	choice=input("Select task\n1. Fetch OneM2M data into files \n2. Time Intervals \n3. NaN detection\n")
 	if choice=='1':
 		shutil.rmtree('./output')
 
 		os.mkdir("./output")
-		os.mkdir("./output/we")
-		os.mkdir("./output/em")
-		os.mkdir("./output/sl")
-		os.mkdir("./output/aq")
-
-		vertical = Vertical(server_uri, 'AE-WE', 'weather', "./output/we/")
-		vertical2= Vertical(server_uri, 'AE-EM', 'energy', "./output/em/")
-		vertical3= Vertical(server_uri, 'AE-SL', 'solar', "./output/sl/")
-		vertical4= Vertical(server_uri, 'AE-AQ', 'airquality', "./output/aq/")
+		for vertical in vert_config['verticals']:
+			os.mkdir(f'''./output/{vertical['vertical_id']}''')
+			# os.mkdir(f'''./output/em''')
+			# os.mkdir(f'''./output/sl''')
+			# os.mkdir(f'''./output/aq''')
+			verticals.append(Vertical(server_uri, f'''AE-{vertical['vertical_id']}''', 'weather', f"./output/{vertical['vertical_id']}/",vertical))
+		 
+		# vertical = Vertical(server_uri, 'AE-WE', 'weather', "./output/we/")
+		# vertical2= Vertical(server_uri, 'AE-EM', 'energy', "./output/em/")
+		# vertical3= Vertical(server_uri, 'AE-SL', 'solar', "./output/sl/")
+		# vertical4= Vertical(server_uri, 'AE-AQ', 'airquality', "./output/aq/")
 		
 	
 		

@@ -95,7 +95,11 @@ def get_temporal_data(api_key, node_id, start_time = None, end_time = None, data
     else:
         response = "No response"
         print("Incorrect URL endpoint")
-    return json.dumps(response.json() , indent=2)
+    try:
+        return_response = json.dumps(response.json() , indent=2)
+    except:
+        return_response = "No response"
+    return return_response
 
 # =====================================================================================
 

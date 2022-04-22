@@ -7,6 +7,7 @@ from telegram.ext.filters import Filters
 from telegram import *
 from telegram.ext import * 
 import os
+import json
 from dotenv import load_dotenv
 load_dotenv()
 updater = Updater(os.getenv("BOT_TOKEN"),
@@ -25,6 +26,17 @@ def help(update: Update, context: CallbackContext):
     /geeks - To get the GeeksforGeeks URL
     /dailyupdate - To get the daily update image""")
   
+def register_user(update: Update, context: CallbackContext):
+    # open json file
+    with open('registered_users.json', 'r') as f:
+        registered_users = json.load(f)
+    # add user to json file
+    registered_users['registered_chat_ids'].append(update.effective_chat.id)
+    # save json file
+    with open('registered_users.json', 'w') as f:
+        json.dump(registered_users, f)
+    update.message.reply_text("Registered Successfully!")
+
   
 def gmail_url(update: Update, context: CallbackContext):
     update.message.reply_text(
@@ -66,6 +78,7 @@ updater.dispatcher.add_handler(CommandHandler('help', help))
 updater.dispatcher.add_handler(CommandHandler('linkedin', linkedIn_url))
 updater.dispatcher.add_handler(CommandHandler('gmail', gmail_url))
 updater.dispatcher.add_handler(CommandHandler('geeks', geeks_url))
+updater.dispatcher.add_handler(CommandHandler('register', register_user))
 updater.dispatcher.add_handler(CommandHandler('dailyupdate', daily_update))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown))
 updater.dispatcher.add_handler(MessageHandler(

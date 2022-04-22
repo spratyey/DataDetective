@@ -30,8 +30,8 @@ def get_api_key(user_email, user_pass, data_format="json"):
         response = requests.post("https://iudx-rs-onem2m.iiit.ac.in/api/get-api_key", json=body)
     except TypeError:
         response = requests.post("https://iudx-rs-onem2m.iiit.ac.in/api/get-api_key", data=json.dumps(body))
-    print("Result Content:",response.text)
-    return json.loads(response.text)["results"]["accessApiKey"]
+    
+    return response.status_code,json.loads(response.text)["results"]["accessApiKey"]
 
 def introspect_api_key(api_key, data_format="json"):
     """
@@ -48,7 +48,7 @@ def introspect_api_key(api_key, data_format="json"):
         response = requests.post("https://iudx-rs-onem2m.iiit.ac.in/api/introspect", json=body)
     except TypeError:
         response = requests.post("https://iudx-rs-onem2m.iiit.ac.in/api/introspect", data=json.dumps(body))
-    print("Result Content:",response.text)
+
     return  response.status_code, json.dumps(response.json(), indent=2)
 
 def get_latest_data(api_key, device_id, data_format="json"):
@@ -63,7 +63,7 @@ def get_latest_data(api_key, device_id, data_format="json"):
         response = requests.get("https://iudx-rs-onem2m.iiit.ac.in/channels/" + device_id + "/feeds/last.json?api_key=" + api_key)
     except TypeError:
         response = "No response"
-    print("Result Content:",response.text)
+    
     return json.dumps(response.json() , indent=2)
 
 def get_temporal_data(api_key, node_id, start_time = None, end_time = None, data_format="json"):
@@ -88,13 +88,10 @@ def get_temporal_data(api_key, node_id, start_time = None, end_time = None, data
         response = requests.get("https://iudx-rs-onem2m.iiit.ac.in/channels/" + node_id + "/feeds.json?api_key=" + \
                                 api_key)
     elif start_time !=None and end_time != None:
-        print("https://iudx-rs-onem2m.iiit.ac.in/channels/" + node_id + "/feeds.json?api_key=" + \
-                                api_key + "start=" + start_time + "end=" + end_time)
         response = requests.get("https://iudx-rs-onem2m.iiit.ac.in/channels/" + node_id + "/feeds.json?api_key=" + \
                                 api_key + "&start=" + start_time + "&end=" + end_time)
     else:
         response = "No response"
-        print("Incorrect URL endpoint")
     try:
         return_response = json.dumps(response.json() , indent=2)
     except:

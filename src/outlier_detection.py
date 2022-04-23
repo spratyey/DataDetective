@@ -12,13 +12,14 @@ from sklearn.neighbors import LocalOutlierFactor
 # datestring for which datetime_obj required
 
 
-def detect_outliers(dir_path, file_name):
+def detect_outliers(dir_path, file_name, metadata_permission):
     with open(dir_path+'/'+file_name) as json_file:
         data = json.load(json_file)
 
     sensor_data = []
     for feeds in data['feeds']:
         date_string = feeds['created_at']
+       
         datetime_obj = datetime.datetime.strptime(
             date_string, '%Y-%m-%dT%H:%M:%S%z')
         cin = []
@@ -45,10 +46,27 @@ def detect_outliers(dir_path, file_name):
          anomaly_alpha=0.3, curve_group='all', save_to_file=dir_path+"/analytics/outlier_"+file_name.split('.')[0]+".png")
 
 
-def outlier_analysis(dirpath):
+    
+   
+    if metadata_permission:
+
+        anomalies = anomalies.tolist()
+        num_anom=0
+        for i in range(len(anomalies)):
+            if anomalies[i]==True:
+                num_anom+=1
+        metadata = []
+        if isfile("./output/metadata/outlier_metadata.json"):
+            with open("./output/metadata/outlier_metadata.json") as f:
+                metadata = json.loads(f.read())
+        metadata.append({"node": file_name.split('.')[0], "num_anomalies": num_anom/len(anomalies)})
+        with open("./output/metadata/outlier_metadata.json", "w") as f:
+            json.dump(metadata, f, indent=4, separators=(',', ': '))
+
+def outlier_analysis(dirpath, metadata_permission):
     files_in_dir = [f for f in listdir(dirpath) if isfile(join(dirpath, f))]
     for file in files_in_dir:
-        detect_outliers(dirpath, file)
+        detect_outliers(dirpath, file, metadata_permission)
 
 
 

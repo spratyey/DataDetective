@@ -16,19 +16,52 @@ from alive_progress import alive_bar
 import time
 from temporal_analysis import freq_analysis, nan_analysis
 from outlier_detection import outlier_analysis
+from os.path import isfile, join
 
 def warn(*args, **kwargs):
     pass
 import warnings
 warnings.warn = warn
 
+def perform_daily_analysis():
+
+    # fetching
+    for i in range(25):
+        func_status = setup_api()
+        if func_status == "Success":
+            break
+        if i == 24:
+            logthis("API is likely down. Failed to fetch API key.")
+            exit()
+
+
+    if os.path.exists('./output'):
+        shutil.rmtree('./output')
+    os.mkdir("./output")
+    
+    if os.path.exists('./output/metadata'):
+        shutil.rmtree('./output/metadata')
+    os.mkdir("./output/metadata")
+    
+    
+    read_verticals()
+
+    # perform the analysis
+    print("Data Posting Frequency Analysis")
+    perform_freq_analysis(False)
+    print("NaN Value Analysis")
+    perform_nan_analysis(False)
+    print("Outlier Analysis")
+    perform_outlier_analysis(False)
 
 def perform_outlier_analysis(interactive):
     if interactive:
         Tk().withdraw()
         dirpath = askdirectory()
-        outlier_analysis(dirpath)
+        outlier_analysis(dirpath, False)
     else:
+        if isfile("./output/metadata/outlier_metadata.json"):
+            os.remove("./output/metadata/outlier_metadata.json")
         with open('verticalconfig.json') as json_file:
 
             # load config file data
@@ -36,16 +69,22 @@ def perform_outlier_analysis(interactive):
             with alive_bar(len(config_file_data['verticals'])) as bar:
                 # for each vertical in the config file, ...
                 for vertical in config_file_data['verticals']:
-                    outlier_analysis("output/"+vertical["vertical_id"])
+                    outlier_analysis("output/"+vertical["vertical_id"], True)
                     time.sleep(0.01)
                     bar()
 
 def perform_freq_analysis(interactive):
+
+    
     if interactive:
         Tk().withdraw()
         dirpath = askdirectory()
-        freq_analysis(dirpath)
+        freq_analysis(dirpath, False)
     else:
+
+        if isfile("./output/metadata/freq_metadata.json"):
+            os.remove("./output/metadata/freq_metadata.json")
+
         with open('verticalconfig.json') as json_file:
 
             # load config file data
@@ -53,17 +92,22 @@ def perform_freq_analysis(interactive):
             with alive_bar(len(config_file_data['verticals'])) as bar:
                 # for each vertical in the config file, ...
                 for vertical in config_file_data['verticals']:
-                    freq_analysis("output/"+vertical["vertical_id"])
+                    freq_analysis("output/"+vertical["vertical_id"], True)
                     time.sleep(0.01)
                     bar()
 
 
 def perform_nan_analysis(interactive):
+
+
     if interactive:
         Tk().withdraw()
         dirpath = askdirectory()
-        nan_analysis(dirpath)
+        nan_analysis(dirpath, False)
     else:
+        if isfile("./output/metadata/nans_metadata.json"):
+            os.remove("./output/metadata/nans_metadata.json")
+
         with open('verticalconfig.json') as json_file:
 
             # load config file data
@@ -71,7 +115,7 @@ def perform_nan_analysis(interactive):
             with alive_bar(len(config_file_data['verticals'])) as bar:
                 # for each vertical in the config file, ...
                 for vertical in config_file_data['verticals']:
-                    nan_analysis("output/"+vertical["vertical_id"])
+                    nan_analysis("output/"+vertical["vertical_id"], True)
                     time.sleep(0.01)
                     bar()
 
@@ -163,7 +207,7 @@ def setup_api():
 def main():
     interactive=False
     choice = '0'
-    options, args = getopt.getopt(sys.argv[1:], 'hi1234', ['help','interactive','fetch','freq','nan','outlier'])
+    options, args = getopt.getopt(sys.argv[1:], 'hi12345', ['help','interactive','fetch','freq','nan','outlier','daily'])
     colorama.init()
 
     for opt,arg in options:
@@ -172,7 +216,7 @@ def main():
         elif opt in ('-i', '--interactive'):
             interactive=True
             choice = input(
-                "Select task\n1. Fetch data and cache locally \n2. Time Intervals \n3. NaN detection\n")
+                "Select task\n1. Fetch data and cache locally \n2. Time Intervals / Frequency Analysis \n3. NaN detection\n4. Outlier detection\n5. Daily analysis routine\n")
         elif opt in ('-1','--fetch'):
             choice = '1'
         elif opt in ('-2','--freq'):
@@ -181,6 +225,8 @@ def main():
             choice = '3'
         elif opt in ('-4','--outlier'):
             choice = '4'
+        elif opt in ('-5','--daily'):
+            choice = '5'
 
     if choice == '0':
         print("Usage: datawarden [OPTIONs]...")
@@ -191,6 +237,7 @@ def main():
         print(" -2 or --freq: If not in interactive mode, perform posting frequency analytics")
         print(" -3 or --nan: If not in interactive mode, perform nan posting analytics")
         print(" -4 or --outlier: If not in interactive mode, perform outlier/anomaly analytics")
+        print(" -5 or --daily: If not in interactive mode, perform full daily posting routine")
         
     elif choice == '1':
         for i in range(25):
@@ -205,6 +252,11 @@ def main():
         if os.path.exists('./output'):
             shutil.rmtree('./output')
         os.mkdir("./output")
+
+        if os.path.exists('./output/metadata'):
+            shutil.rmtree('./output/metadata')
+        os.mkdir("./output/metadata")
+        
         read_verticals()
 
         
@@ -214,6 +266,8 @@ def main():
         perform_nan_analysis(interactive)
     elif choice == '4':
         perform_outlier_analysis(interactive)
+    elif choice == '5':
+        perform_daily_analysis()
     else:
         print("Invalid choice. Use -h or --help for help")
 

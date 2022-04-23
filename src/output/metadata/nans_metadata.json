@@ -1,0 +1,114 @@
+[
+    {
+        "node": "WE-VN04-00",
+        "nan_percent": 0.3646055437100213
+    },
+    {
+        "node": "EM-CR-NI02-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-CR-KN95-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-VN95-01",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-CR-NI02-01",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-SS00-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-FQ93-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-VN01-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-AR00-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-AN01-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-BD01-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-YM00-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-NC-NI93-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-CR-NI02-02",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "EM-CR-BC00-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "SL-NI03-00",
+        "nan_percent": 0.0030639776832670235
+    },
+    {
+        "node": "SL-VN02-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "SL-VN02-01",
+        "nan_percent": 0.004627649231965778
+    },
+    {
+        "node": "SL-VN03-00",
+        "nan_percent": 0.007007007007007007
+    },
+    {
+        "node": "SL-NI03-01",
+        "nan_percent": 0.0036005651519985414
+    },
+    {
+        "node": "AQ-FG00-00",
+        "nan_percent": 0.23084615384615384
+    },
+    {
+        "node": "AQ-AN00-00",
+        "nan_percent": 0.23088461538461538
+    },
+    {
+        "node": "AQ-VN90-00",
+        "nan_percent": 0.23096153846153847
+    },
+    {
+        "node": "WM-WD-VN00-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "WM-WD-VN90-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "WM-WD-AD98-00",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "WM-WD-VN01-01",
+        "nan_percent": 0.0
+    },
+    {
+        "node": "WM-WD-VN01-00",
+        "nan_percent": 0.0
+    }
+]

@@ -1,42 +1,54 @@
-import pandas as pd
+import datetime
+import json
 import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.ensemble import IsolationForest
+import pandas as pd
+from os import listdir
+from os.path import isfile, join
+from adtk.data import validate_series
+from adtk.visualization import plot
+from adtk.detector import QuantileAD, OutlierDetector
+from sklearn.neighbors import LocalOutlierFactor
 
-new_array_1 = np.array([[-97.0, 0.0, 0.0, 0.001, 229.98, 232.12, 231.58, 0.0, 49.92, 0.0, 0.0], [-97.0, 0.0, 0.0, 0.001, 231.3, 232.45, 232.36, 0.0, 50.0, 0.0, 0.0], [-99.0, 0.0, 0.0, 0.001, 231.93, 233.55, 233.76, 0.0, 50.0, 0.0, 0.0], [-92.0, 0.0, 0.0, 0.001, 231.7, 233.13, 232.91, 0.0, 49.97, 0.0, 0.0], [-87.0, 0.0, 0.0, 0.001, 232.97, 234.99, 234.2, 0.0, 50.06, 0.0, 0.0], [-90.0, 0.0, 0.0, 0.001, 232.97, 234.99, 234.2, 0.0, 50.06, 0.0, 0.0], [-91.0, 0.0, 0.0, 0.001, 232.31, 234.59, 233.95, 0.0, 50.02, 0.0, 0.0], [-91.0, 0.0, 0.0, 0.001, 240.1, 242.78, 241.13, 0.0, 50.01, 0.0, 0.0], [-84.0, 0.0, 0.0, 0.0, 242.2, 245.02, 243.54, 0.0, 49.99, 0.0, 0.0], [-87.0, 0.0, 0.0, 0.0, 242.39, 244.79, 243.66, 0.0, 49.89, 0.0, 0.0], [-114.0, 0.0, 0.0, 0.0, 242.13, 245.07, 243.68, 0.0, 49.99, 0.0, 0.0], [-91.0, 0.0, 0.0, 0.001, 240.21, 243.04, 242.01, 0.0, 50.0, 0.0, 0.0], [-90.0, 0.0, 0.0, 0.001, 238.32, 241.07, 239.99, 0.0, 49.94, 0.0, 0.0], [-92.0, 0.0, 0.0, 0.001, 238.32, 241.07, 239.99, 0.0, 49.94, 0.0, 0.0], [-89.0, 0.0, 0.0, 0.001, 236.55, 239.91, 238.06, 0.0, 50.01, 0.0, 0.0], [-108.0, 0.0, 0.0, 0.001, 236.74, 239.61, 237.85, 0.0, 50.01, 0.0, 0.0], [-88.0, 0.0, 0.0, 0.001, 235.25, 237.88, 236.69, 0.0, 49.96, 0.0, 0.0], [-90.0, 0.0, 0.0, 0.001, 234.37, 236.79, 235.99, 0.0, 50.07, 20.0, 0.0], [-98.0, 0.0, 0.0, 0.001, 233.71, 236.87, 235.66, 0.0, 50.06, 0.0, 0.0], [-99.0, 0.0, 0.0, 0.001, 234.13, 236.24, 236.31, 0.0, 50.04, 0.0, 0.0], [-99.0, 0.0, 0.0, 0.001, 234.13, 236.24, 236.31, 0.0, 50.04, 0.0, 0.0], [-96.0, 0.001, 0.0, 0.001, 228.99, 230.81, 230.65, 0.4, 49.95, 0.0, 0.0], [-94.0, 0.001, 0.0, 0.001, 226.6, 228.71, 228.54, 0.4, 49.87, 0.0, 0.0], [-95.0, 0.001, 0.0, 0.001, 226.6, 228.71, 228.54, 0.4, 49.87, 0.0, 0.0], [-102.0, 0.001, 0.0, 0.001, 226.6, 228.71, 228.54, 0.4, 49.87, 0.0, 0.0], [-90.0, 0.001, 0.0, 0.001, 230.6, 232.48, 232.43, 0.4, 50.0, 0.0, 0.0]])
-max_array = new_array_1.max(axis=0)
-max_array = np.where(max_array == 0,1,max_array)
-new_array = new_array_1 / max_array
-
-df = pd.DataFrame(new_array)
-df
-
-def outlier_by_standard_deviation():
-  mean=np.mean(new_array,axis=0,dtype=np.float64)
-  std_dev=np.std(new_array,axis=0, dtype = np.float64)
-  outlier_array=np.zeros(len(new_array))
-  i = 0
-  for val in new_array:
-    deviation = abs(val - mean)
-    # print(deviation)
-    deviation = 1.1*std_dev - deviation
-    if np.sum(deviation) <= 0:
-      outlier_array[i] = -1
-    else:
-      outlier_array[i] = 1
-    i+=1
-  return outlier_array
-
-plt.plot(new_array)
+# datestring for which datetime_obj required
 
 
-clf = IsolationForest()
-preds = clf.fit_predict(df)
-preds2 = outlier_by_standard_deviation()
-final_pred = np.array(preds)+np.array(preds2)
-final_pred = np.where(final_pred >= 0,0,1)
-plt.plot(final_pred)
-plt.show()
-plt.plot(df)
-plt.show()
+def detect_outliers(dir_path, file_name):
+    with open(dir_path+'/'+file_name) as json_file:
+        data = json.load(json_file)
 
+    sensor_data = []
+    for feeds in data['feeds']:
+        date_string = feeds['created_at']
+        datetime_obj = datetime.datetime.strptime(
+            date_string, '%Y-%m-%dT%H:%M:%S%z')
+        cin = []
+        cin.append(datetime_obj)
+        for key in feeds:
+            if type(feeds[key]) == float or type(feeds[key]) == int:
+                cin.append(feeds[key])
+            elif type(feeds[key]) == str:
+                new_val = feeds[key].replace(' ', '')
+                if(new_val == 'nan'):
+                    cin.append(np.nan)
+        sensor_data.append(cin)
+
+    # print(sensor_data[0])
+
+    s_train = pd.DataFrame(sensor_data, index=None)
+    s_train = s_train.set_index(0)
+    s_train = s_train.fillna(0)
+    s_train = validate_series(s_train)
+    # print(s_train)
+    outlier_detector = OutlierDetector(LocalOutlierFactor(contamination=0.05))
+    anomalies = outlier_detector.fit_detect(s_train)
+    plot(s_train, anomaly=anomalies, ts_linewidth=1, ts_markersize=3, anomaly_color='red',
+         anomaly_alpha=0.3, curve_group='all', save_to_file=dir_path+"/analytics/outlier_"+file_name.split('.')[0]+".png")
+
+
+def freq_analysis(dirpath):
+    files_in_dir = [f for f in listdir(dirpath) if isfile(join(dirpath, f))]
+    for file in files_in_dir:
+        detect_outliers(dirpath, file)
+
+
+# freq_analysis("./output/AQ")

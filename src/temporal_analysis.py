@@ -29,7 +29,7 @@ def freq_analysis(dirpath):
 			plt.plot(sensor_interval_list)
 			plt.ylabel('Interval between readings (s)')
 			plt.xlabel('Reading number (sorted chronologically)')
-			plt.savefig(dirpath+"/analytics/freq_"+file+".png", dpi=100)
+			plt.savefig(dirpath+"/analytics/freq_"+file.split('.')[0]+".png", dpi=100)
 			plt.clf()
 
 			

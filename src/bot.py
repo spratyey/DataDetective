@@ -20,10 +20,7 @@ def start(update: Update, context: CallbackContext):
   
 def help(update: Update, context: CallbackContext):
     update.message.reply_text("""Available Commands :-
-    /youtube - To get the youtube URL
-    /linkedin - To get the LinkedIn profile URL
-    /gmail - To get gmail URL
-    /geeks - To get the GeeksforGeeks URL
+    /register - register for daily and weekly summary and updates
     /dailyupdate - To get the daily update image""")
   
 def register_user(update: Update, context: CallbackContext):
@@ -37,32 +34,12 @@ def register_user(update: Update, context: CallbackContext):
         json.dump(registered_users, f)
     update.message.reply_text("Registered Successfully!")
 
-  
-def gmail_url(update: Update, context: CallbackContext):
-    update.message.reply_text(
-        "Your gmail link here (I am not\
-        giving mine one for security reasons)")
-  
-  
-def youtube_url(update: Update, context: CallbackContext):
-    update.message.reply_text("Youtube Link =>\
-    https://www.youtube.com/")
-  
-  
-def linkedIn_url(update: Update, context: CallbackContext):
-    update.message.reply_text(
-        "LinkedIn URL => https://www.linkedin.com/in/")
-  
-  
-def geeks_url(update: Update, context: CallbackContext):
-    update.message.reply_text(
-        "GeeksforGeeks URL => https://www.geeksforgeeks.org/")
-
 def daily_update(update: Update, context: CallbackContext):
     # update.message.reply_photo(open('./output/AQ/analytics/AQ-AN00-00_nan.png', 'rb'),"Nan dection plot")
     # update.message.reply_photo(open('./output/AQ/analytics/AQ-AN00-00_intervals.png', 'rb',"Interval plot"))
     context.bot.send_photo(chat_id=update.effective_chat.id, photo=open('./output/AQ/analytics/AQ-AN00-00_nan.png', 'rb'))
     context.bot.send_photo(chat_id=update.effective_chat.id, photo=open('./output/AQ/analytics/AQ-AN00-00_intervals.png', 'rb'))
+
 def unknown(update: Update, context: CallbackContext):
     update.message.reply_text(
         "Sorry '%s' is not a valid command" % update.message.text)
@@ -72,12 +49,8 @@ def unknown_text(update: Update, context: CallbackContext):
     update.message.reply_text(
         "Sorry I can't recognize you , you said '%s'" % update.message.text)
   
-updater.dispatcher.add_handler(CommandHandler('start', start))
-updater.dispatcher.add_handler(CommandHandler('youtube', youtube_url))
+
 updater.dispatcher.add_handler(CommandHandler('help', help))
-updater.dispatcher.add_handler(CommandHandler('linkedin', linkedIn_url))
-updater.dispatcher.add_handler(CommandHandler('gmail', gmail_url))
-updater.dispatcher.add_handler(CommandHandler('geeks', geeks_url))
 updater.dispatcher.add_handler(CommandHandler('register', register_user))
 updater.dispatcher.add_handler(CommandHandler('dailyupdate', daily_update))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown))

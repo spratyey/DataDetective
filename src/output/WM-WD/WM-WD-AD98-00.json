@@ -1,0 +1,112 @@
+{
+  "channel": {
+    "id": "WM-WD-AD98-00",
+    "description": "WM node with TDS, Temperature, id=1.0",
+    "field1": "Temperature",
+    "field2": "TDS Voltage",
+    "field3": "Uncompensated TDS value",
+    "field4": "Compensated TDS value",
+    "field5": "VersionInfo"
+  },
+  "feeds": [
+    {
+      "created_at": "2022-04-23T23:07:54+05:30",
+      "field1": 0.0,
+      "field2": 2.285723,
+      "field3": 1108.14,
+      "field4": -52.12,
+      "field5": 0.0,
+      "field6": "V2.0.0"
+    },
+    {
+      "created_at": "2022-04-23T19:07:07+05:30",
+      "field1": 0.0,
+      "field2": 2.281721,
+      "field3": 1104.59,
+      "field4": -52.02,
+      "field5": 2.1,
+      "field6": "V2.0.0"
+    },
+    {
+      "created_at": "2022-04-23T13:02:58+05:30",
+      "field1": 31.44,
+      "field2": 1.133354,
+      "field3": 418.65,
+      "field4": 369.0,
+      "field5": 2.1,
+      "field6": "V2.0.0"
+    },
+    {
+      "created_at": "2022-04-23T13:01:34+05:30",
+      "field1": 31.38,
+      "field2": 1.136846,
+      "field3": 420.04,
+      "field4": 370.57,
+      "field5": 2.1,
+      "field6": "V2.0.0"
+    },
+    {
+      "created_at": "2022-04-23T13:00:10+05:30",
+      "field1": 31.38,
+      "field2": 1.134482,
+      "field3": 419.1,
+      "field4": 369.79,
+      "field5": 2.1,
+      "field6": "V2.0.0"
+    },
+    {
+      "created_at": "2022-04-23T12:58:47+05:30",
+      "field1": 31.38,
+      "field2": 1.133945,
+      "field3": 418.89,
+      "field4": 369.61,
+      "field5": 2.1,
+      "field6": "V2.0.0"
+    },
+    {
+      "created_at": "2022-04-23T12:56:32+05:30",
+      "field1": 85.0,
+      "field2": 0.995801,
+      "field3": 365.91,
+      "field4": 174.02,
+      "field5": 2.1,
+      "field6": "V2.0.0"
+    },
+    {
+      "created_at": "2022-04-23T12:55:09+05:30",
+      "field1": 0.0,
+      "field2": 1.000903,
+      "field3": 367.81,
+      "field4": -22.35,
+      "field5": 2.1,
+      "field6": "V2.0.0"
+    },
+    {
+      "created_at": "2022-04-23T10:05:39+05:30",
+      "field1": 0.0,
+      "field2": 0.93884,
+      "field3": 344.92,
+      "field4": -20.94,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    },
+    {
+      "created_at": "2022-04-23T06:04:47+05:30",
+      "field1": 31.56,
+      "field2": 0.895388,
+      "field3": 329.17,
+      "field4": 292.25,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    },
+    {
+      "created_at": "2022-04-23T02:04:02+05:30",
+      "field1": 31.5,
+      "field2": 0.916738,
+      "field3": 336.88,
+      "field4": 299.21,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    }
+  ]
+}

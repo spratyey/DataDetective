@@ -11,18 +11,18 @@ import time
 
 def cache_sensor_data (sensor_id, vert_dir):
     for i in range(25):
-        func_status,data = fetch_data(sensor_id)
+        permission_to_log = i>20
+        func_status,data = fetch_data(sensor_id, permission_to_log)
         if func_status == "Success":
             break
         time.sleep(0.1)
         if(i==24):
             logthis("Error in fetching data for sensor_id: "+sensor_id)
-    print(data)
     write_to_file(data, vert_dir+'/'+sensor_id+'.json')
 
 
 
-def fetch_data(sensor_id):
+def fetch_data(sensor_id, permission_to_log):
 
     function_status="Failure"
 
@@ -44,7 +44,9 @@ def fetch_data(sensor_id):
             function_status="Success"
             data = response
         else:
-            logthis("Error in fetching data for sensor_id: "+sensor_id+"\n"+response)
+            if permission_to_log:
+                logthis("Error in fetching data for sensor_id: "+sensor_id+"\n"+response)
+            function_status="Failure"
 
     except:
         function_status="Failure"

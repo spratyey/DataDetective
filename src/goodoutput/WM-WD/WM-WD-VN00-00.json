@@ -1,0 +1,68 @@
+{
+  "channel": {
+    "id": "WM-WD-VN00-00",
+    "description": "WM node with TDS, Temperature and Water Level Sensor, id=1.0",
+    "field1": "Temperature",
+    "field2": "TDS Voltage",
+    "field3": "Uncompensated TDS value",
+    "field4": "Compensated TDS value",
+    "field5": "Water Level",
+    "field6": "VersionInfo"
+  },
+  "feeds": [
+    {
+      "created_at": "2022-04-23T15:24:19+05:30",
+      "field1": 31.5,
+      "field2": 0.166746,
+      "field3": 68.24,
+      "field4": 60.69,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    },
+    {
+      "created_at": "2022-04-23T11:23:25+05:30",
+      "field1": 27.69,
+      "field2": 0.163577,
+      "field3": 66.99,
+      "field4": 63.71,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    },
+    {
+      "created_at": "2022-04-23T07:22:29+05:30",
+      "field1": 28.31,
+      "field2": 0.147463,
+      "field3": 60.65,
+      "field4": 57.02,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    },
+    {
+      "created_at": "2022-04-23T03:21:43+05:30",
+      "field1": 28.38,
+      "field2": 0.152566,
+      "field3": 62.66,
+      "field4": 58.85,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    },
+    {
+      "created_at": "2022-04-22T23:20:39+05:30",
+      "field1": 29.94,
+      "field2": 0.154124,
+      "field3": 63.28,
+      "field4": 57.8,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    },
+    {
+      "created_at": "2022-04-22T19:19:42+05:30",
+      "field1": 31.19,
+      "field2": 0.162288,
+      "field3": 66.49,
+      "field4": 59.44,
+      "field5": 0.0,
+      "field6": "V3.0.0"
+    }
+  ]
+}

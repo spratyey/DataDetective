@@ -15,7 +15,6 @@ def logthis(message):
 		if len(data)>2000:
 			last_100_lines=data[-100:]
 			truncate=True
-			print("Time To Truncate")
 	log.close()
 	if truncate:
 		with open('log.txt', 'w') as log:

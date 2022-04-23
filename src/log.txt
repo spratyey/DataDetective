@@ -1,204 +1,438 @@
-}
 ----------------
-2022-04-22 23:12:47
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:09
+Error in fetching data for sensor_id: EM-CR-KN95-01
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:12:48
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:09
+Error in fetching data for sensor_id: EM-CR-KN95-01
+----------------
+2022-04-24 01:55:17
+Error in fetching data for sensor_id: EM-CR-SB00-01
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:12:49
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:18
+Error in fetching data for sensor_id: EM-CR-SB00-01
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:12:49
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:19
+Error in fetching data for sensor_id: EM-CR-SB00-01
 ----------------
-2022-04-22 23:13:00
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:27
+Error in fetching data for sensor_id: EM-NC-PH01-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:00
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:28
+Error in fetching data for sensor_id: EM-NC-PH01-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:01
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:28
+Error in fetching data for sensor_id: EM-NC-PH01-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:01
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:28
+Error in fetching data for sensor_id: EM-NC-PH01-00
+----------------
+2022-04-24 01:55:36
+Error in fetching data for sensor_id: EM-NC-SC00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:02
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:37
+Error in fetching data for sensor_id: EM-NC-SC00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:02
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:38
+Error in fetching data for sensor_id: EM-NC-SC00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:03
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:38
+Error in fetching data for sensor_id: EM-NC-SC00-00
+----------------
+2022-04-24 01:55:46
+Error in fetching data for sensor_id: EM-NC-VN92-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:03
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:46
+Error in fetching data for sensor_id: EM-NC-VN92-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:04
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:47
+Error in fetching data for sensor_id: EM-NC-VN92-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:04
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:47
+Error in fetching data for sensor_id: EM-NC-VN92-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:05
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:47
+Error in fetching data for sensor_id: EM-NC-VN92-00
+----------------
+2022-04-24 01:55:56
+Error in fetching data for sensor_id: EM-CR-TG00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:05
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:56
+Error in fetching data for sensor_id: EM-CR-TG00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:05
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:56
+Error in fetching data for sensor_id: EM-CR-TG00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:06
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:57
+Error in fetching data for sensor_id: EM-CR-TG00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:06
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:55:57
+Error in fetching data for sensor_id: EM-CR-TG00-00
+----------------
+2022-04-24 01:56:05
+Error in fetching data for sensor_id: EM-NC-BN01-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:07
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:56:05
+Error in fetching data for sensor_id: EM-NC-BN01-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:08
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:56:06
+Error in fetching data for sensor_id: EM-NC-BN01-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:08
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:56:06
+Error in fetching data for sensor_id: EM-NC-BN01-00
+----------------
+2022-04-24 01:56:14
+Error in fetching data for sensor_id: EM-NC-PH01-03
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:09
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:56:14
+Error in fetching data for sensor_id: EM-NC-PH01-03
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:09
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:56:15
+Error in fetching data for sensor_id: EM-NC-PH01-03
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:10
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:56:15
+Error in fetching data for sensor_id: EM-NC-PH01-03
+----------------
+2022-04-24 01:56:24
+Error in fetching data for sensor_id: EM-NC-SM00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:13:10
-Error in fetching data for sensor_id: AQ-AN0-00
+2022-04-24 01:56:24
+Error in fetching data for sensor_id: EM-NC-SM00-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
 ----------------
-2022-04-22 23:22:38
+2022-04-24 01:56:24
+Error in fetching data for sensor_id: EM-NC-SM00-00
+----------------
+2022-04-24 01:56:33
+Error in fetching data for sensor_id: EM-NC-VN93-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:56:34
+Error in fetching data for sensor_id: EM-NC-VN93-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:56:34
+Error in fetching data for sensor_id: EM-NC-VN93-00
+----------------
+2022-04-24 01:56:42
+Error in fetching data for sensor_id: EM-CR-TG00-01
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:56:43
+Error in fetching data for sensor_id: EM-CR-TG00-01
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:56:44
+Error in fetching data for sensor_id: EM-CR-TG00-01
+----------------
+2022-04-24 01:56:51
+Error in fetching data for sensor_id: EM-NC-DC00-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:56:52
+Error in fetching data for sensor_id: EM-NC-DC00-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:56:52
+Error in fetching data for sensor_id: EM-NC-DC00-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:56:52
+Error in fetching data for sensor_id: EM-NC-DC00-00
+----------------
+2022-04-24 01:57:01
+Error in fetching data for sensor_id: EM-NC-PH02-01
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:01
+Error in fetching data for sensor_id: EM-NC-PH02-01
+----------------
+2022-04-24 01:57:09
+Error in fetching data for sensor_id: EM-NC-SN00-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:11
+Error in fetching data for sensor_id: EM-NC-SN00-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:11
+Error in fetching data for sensor_id: EM-NC-SN00-00
+----------------
+2022-04-24 01:57:19
+Error in fetching data for sensor_id: EM-NC-VN95-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:19
+Error in fetching data for sensor_id: EM-NC-VN95-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:19
+Error in fetching data for sensor_id: EM-NC-VN95-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:20
+Error in fetching data for sensor_id: EM-NC-VN95-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:20
+Error in fetching data for sensor_id: EM-NC-VN95-00
+----------------
+2022-04-24 01:57:29
+Error in fetching data for sensor_id: EM-CR-VN01-00
+----------------
+2022-04-24 01:57:38
+Error in fetching data for sensor_id: EM-NC-DH00-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:39
+Error in fetching data for sensor_id: EM-NC-DH00-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:39
+Error in fetching data for sensor_id: EM-NC-DH00-00
+----------------
+2022-04-24 01:57:47
+Error in fetching data for sensor_id: EM-NC-PH03-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:47
+Error in fetching data for sensor_id: EM-NC-PH03-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:47
+Error in fetching data for sensor_id: EM-NC-PH03-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:57:48
+Error in fetching data for sensor_id: EM-NC-PH03-00
+----------------
+2022-04-24 01:58:02
+Error in fetching data for sensor_id: SL-VN95-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:58:02
+Error in fetching data for sensor_id: SL-VN95-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:58:03
+Error in fetching data for sensor_id: SL-VN95-00
+{
+  "type": 400,
+  "title": "Bad Request Data",
+  "detail": "Empty response"
+}
+----------------
+2022-04-24 01:58:03
+Error in fetching data for sensor_id: SL-VN95-00
+----------------
+2022-04-24 01:58:13
 Error in fetching data for sensor_id: AQ-KN00-00
 {
   "type": 400,
@@ -206,7 +440,7 @@ Error in fetching data for sensor_id: AQ-KN00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:22:39
+2022-04-24 01:58:13
 Error in fetching data for sensor_id: AQ-KN00-00
 {
   "type": 400,
@@ -214,7 +448,7 @@ Error in fetching data for sensor_id: AQ-KN00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:22:39
+2022-04-24 01:58:14
 Error in fetching data for sensor_id: AQ-KN00-00
 {
   "type": 400,
@@ -222,98 +456,10 @@ Error in fetching data for sensor_id: AQ-KN00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:22:40
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:41
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:43
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:44
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:44
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:45
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:46
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:47
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:47
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:49
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:49
-Error in fetching data for sensor_id: AQ-KN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:50
+2022-04-24 01:58:14
 Error in fetching data for sensor_id: AQ-KN00-00
 ----------------
-2022-04-22 23:22:51
+2022-04-24 01:58:22
 Error in fetching data for sensor_id: AQ-PH03-00
 {
   "type": 400,
@@ -321,7 +467,7 @@ Error in fetching data for sensor_id: AQ-PH03-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:22:51
+2022-04-24 01:58:22
 Error in fetching data for sensor_id: AQ-PH03-00
 {
   "type": 400,
@@ -329,7 +475,7 @@ Error in fetching data for sensor_id: AQ-PH03-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:22:52
+2022-04-24 01:58:23
 Error in fetching data for sensor_id: AQ-PH03-00
 {
   "type": 400,
@@ -337,7 +483,7 @@ Error in fetching data for sensor_id: AQ-PH03-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:22:58
+2022-04-24 01:58:23
 Error in fetching data for sensor_id: AQ-PH03-00
 {
   "type": 400,
@@ -345,82 +491,10 @@ Error in fetching data for sensor_id: AQ-PH03-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:22:58
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:59
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:22:59
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:00
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:00
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:01
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:01
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:02
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:04
-Error in fetching data for sensor_id: AQ-PH03-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:04
+2022-04-24 01:58:23
 Error in fetching data for sensor_id: AQ-PH03-00
 ----------------
-2022-04-22 23:23:04
+2022-04-24 01:58:31
 Error in fetching data for sensor_id: AQ-SN00-00
 {
   "type": 400,
@@ -428,7 +502,7 @@ Error in fetching data for sensor_id: AQ-SN00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:05
+2022-04-24 01:58:31
 Error in fetching data for sensor_id: AQ-SN00-00
 {
   "type": 400,
@@ -436,7 +510,7 @@ Error in fetching data for sensor_id: AQ-SN00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:06
+2022-04-24 01:58:32
 Error in fetching data for sensor_id: AQ-SN00-00
 {
   "type": 400,
@@ -444,98 +518,10 @@ Error in fetching data for sensor_id: AQ-SN00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:07
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:07
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:08
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:08
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:09
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:09
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:11
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:11
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:12
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:13
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:13
-Error in fetching data for sensor_id: AQ-SN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:14
+2022-04-24 01:58:32
 Error in fetching data for sensor_id: AQ-SN00-00
 ----------------
-2022-04-22 23:23:14
+2022-04-24 01:58:41
 Error in fetching data for sensor_id: AQ-BN00-00
 {
   "type": 400,
@@ -543,221 +529,13 @@ Error in fetching data for sensor_id: AQ-BN00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:15
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:16
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:16
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:17
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:18
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:18
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:19
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:19
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:22
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:22
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:22
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:23
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:23
-Error in fetching data for sensor_id: AQ-BN00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:23
+2022-04-24 01:58:41
 Error in fetching data for sensor_id: AQ-BN00-00
 ----------------
-2022-04-22 23:23:24
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:25
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:25
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:26
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:27
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:27
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:27
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:28
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:30
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:30
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:31
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:31
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:32
-Error in fetching data for sensor_id: AQ-KH00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:33
+2022-04-24 01:58:50
 Error in fetching data for sensor_id: AQ-KH00-00
 ----------------
-2022-04-22 23:23:33
+2022-04-24 01:59:03
 Error in fetching data for sensor_id: AQ-MG00-00
 {
   "type": 400,
@@ -765,114 +543,10 @@ Error in fetching data for sensor_id: AQ-MG00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:34
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:34
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:34
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:35
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:36
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:37
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:37
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:38
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:39
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:39
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:40
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:40
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:41
-Error in fetching data for sensor_id: AQ-MG00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:42
+2022-04-24 01:59:03
 Error in fetching data for sensor_id: AQ-MG00-00
 ----------------
-2022-04-22 23:23:43
+2022-04-24 01:59:12
 Error in fetching data for sensor_id: AQ-PL00-00
 {
   "type": 400,
@@ -880,157 +554,143 @@ Error in fetching data for sensor_id: AQ-PL00-00
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:43
+2022-04-24 01:59:13
 Error in fetching data for sensor_id: AQ-PL00-00
+----------------
+2022-04-24 01:59:23
+Error in fetching data for sensor_id: WM-WD-PH01-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:44
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 01:59:25
+Error in fetching data for sensor_id: WM-WD-PH01-00
+----------------
+2022-04-24 01:59:33
+Error in fetching data for sensor_id: WM-WD-BN04-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:44
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 01:59:33
+Error in fetching data for sensor_id: WM-WD-BN04-00
+----------------
+2022-04-24 01:59:41
+Error in fetching data for sensor_id: WM-WD-PL00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:45
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 01:59:42
+Error in fetching data for sensor_id: WM-WD-PL00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:45
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 01:59:42
+Error in fetching data for sensor_id: WM-WD-PL00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:46
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 01:59:43
+Error in fetching data for sensor_id: WM-WD-PL00-00
+----------------
+2022-04-24 01:59:51
+Error in fetching data for sensor_id: WM-WD-PH02-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:46
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 01:59:51
+Error in fetching data for sensor_id: WM-WD-PH02-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:47
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 01:59:51
+Error in fetching data for sensor_id: WM-WD-PH02-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:47
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 01:59:51
+Error in fetching data for sensor_id: WM-WD-PH02-00
+----------------
+2022-04-24 02:00:00
+Error in fetching data for sensor_id: WM-WD-PH03-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:48
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 02:00:01
+Error in fetching data for sensor_id: WM-WD-PH03-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:48
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 02:00:01
+Error in fetching data for sensor_id: WM-WD-PH03-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:49
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 02:00:01
+Error in fetching data for sensor_id: WM-WD-PH03-00
+----------------
+2022-04-24 02:00:09
+Error in fetching data for sensor_id: WM-WD-KN00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:49
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 02:00:10
+Error in fetching data for sensor_id: WM-WD-KN00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:49
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 02:00:10
+Error in fetching data for sensor_id: WM-WD-KN00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:50
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 02:00:11
+Error in fetching data for sensor_id: WM-WD-KN00-00
 {
   "type": 400,
   "title": "Bad Request Data",
   "detail": "Empty response"
 }
 ----------------
-2022-04-22 23:23:51
-Error in fetching data for sensor_id: AQ-PL00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:51
-Error in fetching data for sensor_id: AQ-PL00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:51
-Error in fetching data for sensor_id: AQ-PL00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:52
-Error in fetching data for sensor_id: AQ-PL00-00
-{
-  "type": 400,
-  "title": "Bad Request Data",
-  "detail": "Empty response"
-}
-----------------
-2022-04-22 23:23:52
-Error in fetching data for sensor_id: AQ-PL00-00
+2022-04-24 02:00:11
+Error in fetching data for sensor_id: WM-WD-KN00-00

@@ -15,12 +15,12 @@ updater = Updater(os.getenv("BOT_TOKEN"),
   
   
 def start(update: Update, context: CallbackContext):
-    buttons = [[KeyboardButton("/dailyupdate")], [KeyboardButton("/help")]]
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Welcome to my bot!", reply_markup=ReplyKeyboardMarkup(buttons))
+    update.message.reply_text("Hi! I'm the Smart City bot!\n Type /help to get started.")
   
 def help(update: Update, context: CallbackContext):
     update.message.reply_text("""Available Commands :-
     /register - register for daily and weekly summary and updates
+    /unregister - unregister for daily and weekly summary and updates
     /dailyupdate - To get the daily update image""")
   
 def register_user(update: Update, context: CallbackContext):
@@ -28,17 +28,37 @@ def register_user(update: Update, context: CallbackContext):
     with open('registered_users.json', 'r') as f:
         registered_users = json.load(f)
     # add user to json file
-    registered_users['registered_chat_ids'].append(update.effective_chat.id)
-    # save json file
-    with open('registered_users.json', 'w') as f:
-        json.dump(registered_users, f)
-    update.message.reply_text("Registered Successfully!")
+    if update.effective_chat.id not in registered_users['registered_chat_ids']:
+        registered_users['registered_chat_ids'].append(update.effective_chat.id)
+        # save json file
+        with open('registered_users.json', 'w') as f:
+            json.dump(registered_users, f)
+        update.message.reply_text("Registered Successfully!")
+    else:
+        update.message.reply_text("You are already registered!")
+
+def unregister_user(update: Update, context: CallbackContext):
+    # open json file
+    with open('registered_users.json', 'r') as f:
+        registered_users = json.load(f)
+    # remove user from json file
+    if update.effective_chat.id in registered_users['registered_chat_ids']:
+        registered_users['registered_chat_ids'].remove(update.effective_chat.id)
+        # save json file
+        with open('registered_users.json', 'w') as f:
+            json.dump(registered_users, f)
+        update.message.reply_text("Unregistered Successfully!")
+    else:
+        update.message.reply_text("You are not registered!")
 
 def daily_update(update: Update, context: CallbackContext):
-    # update.message.reply_photo(open('./output/AQ/analytics/AQ-AN00-00_nan.png', 'rb'),"Nan dection plot")
-    # update.message.reply_photo(open('./output/AQ/analytics/AQ-AN00-00_intervals.png', 'rb',"Interval plot"))
-    context.bot.send_photo(chat_id=update.effective_chat.id, photo=open('./output/AQ/analytics/AQ-AN00-00_nan.png', 'rb'))
-    context.bot.send_photo(chat_id=update.effective_chat.id, photo=open('./output/AQ/analytics/AQ-AN00-00_intervals.png', 'rb'))
+    with open('verticalconfig.json', 'r') as f:
+        verticalconfig = json.load(f)
+    keyboard_list = []
+    for val in verticalconfig['verticals']:
+        keyboard_list.append(KeyboardButton(val['vertical_id']))
+    buttons = [keyboard_list]
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Click the vertical for more info!", reply_markup=ReplyKeyboardMarkup(buttons))
 
 def unknown(update: Update, context: CallbackContext):
     update.message.reply_text(
@@ -51,7 +71,9 @@ def unknown_text(update: Update, context: CallbackContext):
   
 
 updater.dispatcher.add_handler(CommandHandler('help', help))
+updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.dispatcher.add_handler(CommandHandler('register', register_user))
+updater.dispatcher.add_handler(CommandHandler('unregister', unregister_user))
 updater.dispatcher.add_handler(CommandHandler('dailyupdate', daily_update))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown))
 updater.dispatcher.add_handler(MessageHandler(

@@ -59,7 +59,7 @@ def detect_outliers(dir_path, file_name, metadata_permission):
         if isfile("./output/metadata/outlier_metadata.json"):
             with open("./output/metadata/outlier_metadata.json") as f:
                 metadata = json.loads(f.read())
-        metadata.append({"node": file_name.split('.')[0], "num_anomalies": num_anom/len(anomalies)})
+        metadata.append({"node": file_name.split('.')[0], "num_anomalies": num_anom})
         with open("./output/metadata/outlier_metadata.json", "w") as f:
             json.dump(metadata, f, indent=4, separators=(',', ': '))
 

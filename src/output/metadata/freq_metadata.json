@@ -4,40 +4,20 @@
         "max_gap": 60.0
     },
     {
-        "node": "EM-CR-NI02-00",
-        "max_gap": 12330.0
-    },
-    {
         "node": "EM-CR-KN95-00",
         "max_gap": 10965.0
-    },
-    {
-        "node": "EM-NC-VN95-01",
-        "max_gap": 14561.0
     },
     {
         "node": "EM-CR-NI02-01",
         "max_gap": 26413.0
     },
     {
-        "node": "EM-NC-SS00-00",
-        "max_gap": 7272.0
+        "node": "EM-CR-NI02-00",
+        "max_gap": 12330.0
     },
     {
-        "node": "EM-NC-FQ93-00",
-        "max_gap": 11010.0
-    },
-    {
-        "node": "EM-NC-VN01-00",
-        "max_gap": 7285.0
-    },
-    {
-        "node": "EM-NC-AR00-00",
-        "max_gap": 14530.0
-    },
-    {
-        "node": "EM-NC-AN01-00",
-        "max_gap": 18264.0
+        "node": "EM-NC-VN95-01",
+        "max_gap": 14561.0
     },
     {
         "node": "EM-NC-BD01-00",
@@ -48,10 +28,6 @@
         "max_gap": 20222.0
     },
     {
-        "node": "EM-NC-NI93-00",
-        "max_gap": 4585.0
-    },
-    {
         "node": "EM-CR-NI02-02",
         "max_gap": 11040.0
     },
@@ -60,15 +36,35 @@
         "max_gap": 7287.0
     },
     {
-        "node": "SL-NI03-00",
-        "max_gap": 38520.0
+        "node": "EM-NC-SS00-00",
+        "max_gap": 7272.0
+    },
+    {
+        "node": "EM-NC-AR00-00",
+        "max_gap": 14530.0
+    },
+    {
+        "node": "EM-NC-FQ93-00",
+        "max_gap": 11010.0
+    },
+    {
+        "node": "EM-NC-AN01-00",
+        "max_gap": 18264.0
+    },
+    {
+        "node": "EM-NC-NI93-00",
+        "max_gap": 4585.0
+    },
+    {
+        "node": "EM-NC-VN01-00",
+        "max_gap": 7286.0
     },
     {
         "node": "SL-VN02-00",
         "max_gap": 180.0
     },
     {
-        "node": "SL-VN02-01",
+        "node": "SL-NI03-01",
         "max_gap": 38520.0
     },
     {
@@ -76,8 +72,16 @@
         "max_gap": 38280.0
     },
     {
-        "node": "SL-NI03-01",
+        "node": "SL-NI03-00",
         "max_gap": 38520.0
+    },
+    {
+        "node": "SL-VN02-01",
+        "max_gap": 38520.0
+    },
+    {
+        "node": "AQ-VN90-00",
+        "max_gap": 54.0
     },
     {
         "node": "AQ-FG00-00",
@@ -86,18 +90,6 @@
     {
         "node": "AQ-AN00-00",
         "max_gap": 36.0
-    },
-    {
-        "node": "AQ-VN90-00",
-        "max_gap": 54.0
-    },
-    {
-        "node": "WM-WD-VN00-00",
-        "max_gap": 14463.0
-    },
-    {
-        "node": "WM-WD-VN90-00",
-        "max_gap": 14573.0
     },
     {
         "node": "WM-WD-AD98-00",
@@ -110,5 +102,13 @@
     {
         "node": "WM-WD-VN01-00",
         "max_gap": 14453.0
+    },
+    {
+        "node": "WM-WD-VN00-00",
+        "max_gap": 14463.0
+    },
+    {
+        "node": "WM-WD-VN90-00",
+        "max_gap": 14573.0
     }
 ]

@@ -14,6 +14,7 @@ import getopt
 from colorama import Fore, Back, Style
 from alive_progress import alive_bar
 import time
+from notification import daily_summary
 from temporal_analysis import freq_analysis, nan_analysis
 from outlier_detection import outlier_analysis
 from os.path import isfile, join
@@ -53,6 +54,7 @@ def perform_daily_analysis():
     perform_nan_analysis(False)
     print("Outlier Analysis")
     perform_outlier_analysis(False)
+    daily_summary('./output/metadata')
 
 def perform_outlier_analysis(interactive):
     if interactive:
@@ -207,8 +209,8 @@ def setup_api():
 def main():
     interactive=False
     choice = '0'
-    options, args = getopt.getopt(sys.argv[1:], 'hi12345', ['help','interactive','fetch','freq','nan','outlier','daily'])
-    colorama.init()
+    options, args = getopt.getopt(sys.argv[1:], 'hi123456', ['help','interactive','fetch','freq','nan','outlier','notif','daily'])
+
 
     for opt,arg in options:
         if opt in ('-h', '--help'):
@@ -225,8 +227,10 @@ def main():
             choice = '3'
         elif opt in ('-4','--outlier'):
             choice = '4'
-        elif opt in ('-5','--daily'):
+        elif opt in ('-5','--notif'):
             choice = '5'
+        elif opt in ('-6','--daily'):
+            choice = '6'
 
     if choice == '0':
         print("Usage: datawarden [OPTIONs]...")
@@ -237,7 +241,8 @@ def main():
         print(" -2 or --freq: If not in interactive mode, perform posting frequency analytics")
         print(" -3 or --nan: If not in interactive mode, perform nan posting analytics")
         print(" -4 or --outlier: If not in interactive mode, perform outlier/anomaly analytics")
-        print(" -5 or --daily: If not in interactive mode, perform full daily posting routine")
+        print(" -5 or --notif: If not in interactive mode, perform notification analytics")
+        print(" -6 or --daily: If not in interactive mode, perform full daily posting routine")
         
     elif choice == '1':
         for i in range(25):
@@ -267,6 +272,8 @@ def main():
     elif choice == '4':
         perform_outlier_analysis(interactive)
     elif choice == '5':
+        daily_summary('./output/metadata')
+    elif choice == '6':
         perform_daily_analysis()
     else:
         print("Invalid choice. Use -h or --help for help")

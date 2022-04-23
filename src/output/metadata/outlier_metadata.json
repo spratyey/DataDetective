@@ -1,114 +1,114 @@
 [
     {
         "node": "WE-VN04-00",
-        "num_anomalies": 0.04477611940298507
-    },
-    {
-        "node": "EM-CR-NI02-00",
-        "num_anomalies": 0.08695652173913043
+        "num_anomalies": 69
     },
     {
         "node": "EM-CR-KN95-00",
-        "num_anomalies": 0.09090909090909091
-    },
-    {
-        "node": "EM-NC-VN95-01",
-        "num_anomalies": 0.058823529411764705
+        "num_anomalies": 2
     },
     {
         "node": "EM-CR-NI02-01",
-        "num_anomalies": 0.047619047619047616
+        "num_anomalies": 1
     },
     {
-        "node": "EM-NC-SS00-00",
-        "num_anomalies": 0.058823529411764705
+        "node": "EM-CR-NI02-00",
+        "num_anomalies": 2
     },
     {
-        "node": "EM-NC-FQ93-00",
-        "num_anomalies": 0.0625
-    },
-    {
-        "node": "EM-NC-VN01-00",
-        "num_anomalies": 0.05
-    },
-    {
-        "node": "EM-NC-AR00-00",
-        "num_anomalies": 0.08695652173913043
-    },
-    {
-        "node": "EM-NC-AN01-00",
-        "num_anomalies": 0.08333333333333333
+        "node": "EM-NC-VN95-01",
+        "num_anomalies": 1
     },
     {
         "node": "EM-NC-BD01-00",
-        "num_anomalies": 0.08333333333333333
+        "num_anomalies": 1
     },
     {
         "node": "EM-NC-YM00-00",
-        "num_anomalies": 0.08333333333333333
-    },
-    {
-        "node": "EM-NC-NI93-00",
-        "num_anomalies": 0.08695652173913043
+        "num_anomalies": 1
     },
     {
         "node": "EM-CR-NI02-02",
-        "num_anomalies": 0.09090909090909091
+        "num_anomalies": 2
     },
     {
         "node": "EM-CR-BC00-00",
-        "num_anomalies": 0.05263157894736842
+        "num_anomalies": 1
     },
     {
-        "node": "SL-NI03-00",
-        "num_anomalies": 0.050761421319796954
+        "node": "EM-NC-SS00-00",
+        "num_anomalies": 1
+    },
+    {
+        "node": "EM-NC-AR00-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-FQ93-00",
+        "num_anomalies": 1
+    },
+    {
+        "node": "EM-NC-AN01-00",
+        "num_anomalies": 1
+    },
+    {
+        "node": "EM-NC-NI93-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-VN01-00",
+        "num_anomalies": 1
     },
     {
         "node": "SL-VN02-00",
-        "num_anomalies": 0.05035405192761605
-    },
-    {
-        "node": "SL-VN02-01",
-        "num_anomalies": 0.050359712230215826
-    },
-    {
-        "node": "SL-VN03-00",
-        "num_anomalies": 0.05128205128205128
+        "num_anomalies": 64
     },
     {
         "node": "SL-NI03-01",
-        "num_anomalies": 0.050590219224283306
+        "num_anomalies": 30
     },
     {
-        "node": "AQ-FG00-00",
-        "num_anomalies": 0.05
+        "node": "SL-VN03-00",
+        "num_anomalies": 36
     },
     {
-        "node": "AQ-AN00-00",
-        "num_anomalies": 0.05
+        "node": "SL-NI03-00",
+        "num_anomalies": 27
+    },
+    {
+        "node": "SL-VN02-01",
+        "num_anomalies": 35
     },
     {
         "node": "AQ-VN90-00",
-        "num_anomalies": 0.05
+        "num_anomalies": 100
     },
     {
-        "node": "WM-WD-VN00-00",
-        "num_anomalies": 0.16666666666666666
+        "node": "AQ-FG00-00",
+        "num_anomalies": 100
     },
     {
-        "node": "WM-WD-VN90-00",
-        "num_anomalies": 0.2
+        "node": "AQ-AN00-00",
+        "num_anomalies": 100
     },
     {
         "node": "WM-WD-AD98-00",
-        "num_anomalies": 0.09090909090909091
+        "num_anomalies": 1
     },
     {
         "node": "WM-WD-VN01-01",
-        "num_anomalies": 0.05102040816326531
+        "num_anomalies": 5
     },
     {
         "node": "WM-WD-VN01-00",
-        "num_anomalies": 0.16666666666666666
+        "num_anomalies": 1
+    },
+    {
+        "node": "WM-WD-VN00-00",
+        "num_anomalies": 1
+    },
+    {
+        "node": "WM-WD-VN90-00",
+        "num_anomalies": 1
     }
 ]

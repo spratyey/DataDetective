@@ -1,7 +1,7 @@
 [
     {
         "node": "WE-VN04-00",
-        "num_anomalies": 69
+        "num_anomalies": 65
     },
     {
         "node": "EM-CR-KN95-00",
@@ -65,15 +65,15 @@
     },
     {
         "node": "SL-NI03-01",
-        "num_anomalies": 30
+        "num_anomalies": 27
     },
     {
         "node": "SL-VN03-00",
-        "num_anomalies": 36
+        "num_anomalies": 35
     },
     {
         "node": "SL-NI03-00",
-        "num_anomalies": 27
+        "num_anomalies": 23
     },
     {
         "node": "SL-VN02-01",
@@ -97,7 +97,7 @@
     },
     {
         "node": "WM-WD-VN01-01",
-        "num_anomalies": 5
+        "num_anomalies": 4
     },
     {
         "node": "WM-WD-VN01-00",

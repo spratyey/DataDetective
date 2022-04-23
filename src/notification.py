@@ -96,7 +96,10 @@ def send_doc(json_file):
     dirpath = './output'
     fname = []
     for chat_id in data['registered_chat_ids']:
-        updater.bot.send_document(chat_id=chat_id, document=open('summary.zip', 'rb'),caption = "Daily Summary")
+        try:
+            updater.bot.send_document(chat_id=chat_id, document=open('summary.zip', 'rb'),caption = "Daily Summary")
+        except:
+            print("Error sending document to chat_id: "+str(chat_id))
             
             
 def send_plot(sensor_name,plot_type,json_file):
@@ -110,7 +113,10 @@ def send_plot(sensor_name,plot_type,json_file):
     for file in fname:
         if (sensor_name in file) and (plot_type in file):
             for chat_id in data['registered_chat_ids']:
-                updater.bot.send_photo(chat_id=chat_id, photo=open(file, 'rb'),caption = sensor_name+":"+"\n"+""+plot_type+" plot")
+                try:
+                    updater.bot.send_photo(chat_id=chat_id, photo=open(file, 'rb'),caption = sensor_name+":"+"\n"+""+plot_type+" plot")
+                except:
+                    print("Error sending document to chat_id: "+str(chat_id))
             
 
 
@@ -118,7 +124,10 @@ def notify(json_file,markdown_file):
     with open(json_file, 'r') as f:
         data = json.load(f)
     for chat_id in data['registered_chat_ids']:
-        updater.bot.send_message(chat_id=chat_id, text=markdown_file, parse_mode=ParseMode.MARKDOWN_V2)
+        try:
+            updater.bot.send_message(chat_id=chat_id, text=markdown_file, parse_mode=ParseMode.MARKDOWN_V2)
+        except:
+            print("Error sending document to chat_id: "+str(chat_id))
 
 # notify('registered_users.json',)
 # daily_summary('./output/metadata')

@@ -233,7 +233,7 @@ def main():
             choice = '6'
 
     if choice == '0':
-        print("Usage: datawarden [OPTIONs]...")
+        print("Usage: datadetective [OPTIONs]...")
         print("Options:")
         print(" -h or --help: Print this help message")
         print(" -i or --interactive: Interactive mode")

@@ -16,7 +16,7 @@ A comprehensive data analysis tool for the Smart City Living Lab, SCRC-IIITH.
 - `sudo chmod 755 /usr/local/bin/datadetective`
 
 ### Usage
-Usage: datawarden [OPTIONs]...
+Usage: datadetective [OPTIONs]...
 
 Options:
 -	-h or --help: Print this help message

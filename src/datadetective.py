@@ -218,7 +218,7 @@ def main():
         elif opt in ('-i', '--interactive'):
             interactive=True
             choice = input(
-                "Select task\n1. Fetch data and cache locally \n2. Time Intervals / Frequency Analysis \n3. NaN detection\n4. Outlier detection\n5. Daily analysis routine\n")
+                "Select task\n1. Fetch data and cache locally \n2. Time Intervals / Frequency Analysis \n3. NaN detection\n4. Outlier detection\n")
         elif opt in ('-1','--fetch'):
             choice = '1'
         elif opt in ('-2','--freq'):

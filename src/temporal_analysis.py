@@ -32,4 +32,30 @@ def freq_analysis(dirpath):
 			plt.savefig(dirpath+"/analytics/freq_"+file.split('.')[0]+".png", dpi=100)
 			plt.clf()
 
+
+def nan_analysis(dirpath):
+
+	files_in_dir = [f for f in listdir(dirpath) if isfile(join(dirpath, f))]
+
+	for file in files_in_dir:
+
+		with open(dirpath+"/"+file) as json_file:
+			data = json.load(json_file)
+			sensor_nan_list = []
+			for i in range(0, len(data['feeds'])-1):
+				nans=0
+				for key in data['feeds'][i]:
+					if type(data['feeds'][i][key]) == str:
+						new_val = data['feeds'][i][key].replace(' ', '')
+						if(new_val == 'nan'):
+							nans+=1
+				sensor_nan_list.append(nans)
+
+
+			plt.plot(sensor_nan_list)
+			plt.ylabel('Number of nan fields in a reading')
+			plt.xlabel('Reading number (sorted chronologically)')
+			plt.savefig(dirpath+"/analytics/nans_"+file.split('.')[0]+".png", dpi=100)
+			plt.clf()
+
 			

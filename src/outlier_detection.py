@@ -45,10 +45,10 @@ def detect_outliers(dir_path, file_name):
          anomaly_alpha=0.3, curve_group='all', save_to_file=dir_path+"/analytics/outlier_"+file_name.split('.')[0]+".png")
 
 
-def freq_analysis(dirpath):
+def outlier_analysis(dirpath):
     files_in_dir = [f for f in listdir(dirpath) if isfile(join(dirpath, f))]
     for file in files_in_dir:
         detect_outliers(dirpath, file)
 
 
-# freq_analysis("./output/AQ")
+

@@ -1,10 +1,26 @@
 [
     {
         "node": "WE-VN04-00",
-        "num_anomalies": 65
+        "num_anomalies": 71
+    },
+    {
+        "node": "WE-GS04-00",
+        "num_anomalies": 14
+    },
+    {
+        "node": "EM-CR-NI02-00",
+        "num_anomalies": 3
+    },
+    {
+        "node": "EM-NC-VN01-02",
+        "num_anomalies": 2
     },
     {
         "node": "EM-CR-KN95-00",
+        "num_anomalies": 1
+    },
+    {
+        "node": "EM-NC-VN95-01",
         "num_anomalies": 2
     },
     {
@@ -12,20 +28,48 @@
         "num_anomalies": 1
     },
     {
-        "node": "EM-CR-NI02-00",
+        "node": "EM-CR-VN03-00",
         "num_anomalies": 2
     },
     {
-        "node": "EM-NC-VN95-01",
+        "node": "EM-NC-SS00-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-FQ93-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-VN01-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-CR-SB00-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-AR00-00",
         "num_anomalies": 1
+    },
+    {
+        "node": "EM-CR-VN02-00",
+        "num_anomalies": 2
     },
     {
         "node": "EM-NC-BD01-00",
-        "num_anomalies": 1
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-CR-BN01-01",
+        "num_anomalies": 2
     },
     {
         "node": "EM-NC-YM00-00",
-        "num_anomalies": 1
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-NI93-00",
+        "num_anomalies": 3
     },
     {
         "node": "EM-CR-NI02-02",
@@ -33,75 +77,47 @@
     },
     {
         "node": "EM-CR-BC00-00",
-        "num_anomalies": 1
-    },
-    {
-        "node": "EM-NC-SS00-00",
-        "num_anomalies": 1
-    },
-    {
-        "node": "EM-NC-AR00-00",
         "num_anomalies": 2
     },
     {
-        "node": "EM-NC-FQ93-00",
-        "num_anomalies": 1
+        "node": "SL-NI03-00",
+        "num_anomalies": 30
     },
     {
-        "node": "EM-NC-AN01-00",
-        "num_anomalies": 1
+        "node": "SL-VN95-00",
+        "num_anomalies": 55
     },
     {
-        "node": "EM-NC-NI93-00",
-        "num_anomalies": 2
-    },
-    {
-        "node": "EM-NC-VN01-00",
-        "num_anomalies": 1
-    },
-    {
-        "node": "SL-VN02-00",
-        "num_anomalies": 64
-    },
-    {
-        "node": "SL-NI03-01",
-        "num_anomalies": 27
+        "node": "SL-VN02-01",
+        "num_anomalies": 34
     },
     {
         "node": "SL-VN03-00",
         "num_anomalies": 35
     },
     {
-        "node": "SL-NI03-00",
-        "num_anomalies": 23
+        "node": "SL-NI03-01",
+        "num_anomalies": 30
     },
     {
-        "node": "SL-VN02-01",
-        "num_anomalies": 35
+        "node": "AQ-BN00-00",
+        "num_anomalies": 100
     },
     {
-        "node": "AQ-VN90-00",
+        "node": "AQ-KN00-00",
         "num_anomalies": 100
     },
     {
         "node": "AQ-FG00-00",
-        "num_anomalies": 100
+        "num_anomalies": 79
     },
     {
         "node": "AQ-AN00-00",
         "num_anomalies": 100
     },
     {
-        "node": "WM-WD-AD98-00",
-        "num_anomalies": 1
-    },
-    {
-        "node": "WM-WD-VN01-01",
-        "num_anomalies": 4
-    },
-    {
-        "node": "WM-WD-VN01-00",
-        "num_anomalies": 1
+        "node": "AQ-VN90-00",
+        "num_anomalies": 100
     },
     {
         "node": "WM-WD-VN00-00",
@@ -109,6 +125,10 @@
     },
     {
         "node": "WM-WD-VN90-00",
+        "num_anomalies": 1
+    },
+    {
+        "node": "WM-WD-VN01-00",
         "num_anomalies": 1
     }
 ]

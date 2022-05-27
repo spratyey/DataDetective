@@ -3,7 +3,9 @@
         {
             "vertical_id": "WE",
             "incharge": [
-                "spratyay@gmail.com"
+                "ganesh.gnana@research.iiit.ac.in",
+                "vishal@iiit.ac.in",
+                "anuradha.vattem@research.iiit.ac.in"
             ],
             "type": "Weather Monitoring",
             "sensor_nodes": [
@@ -15,7 +17,7 @@
         {
             "vertical_id": "EM",
             "incharge": [
-                "spratyay@gmail.com"
+                "anuradha.vattem@research.iiit.ac.in"
             ],
             "type": "Energy Monitoring",
             "sensor_nodes": [
@@ -74,7 +76,9 @@
         {
             "vertical_id": "SL",
             "incharge": [
-                "spratyay@gmail.com"
+                "ganesh.gnana@research.iiit.ac.in",
+                "vishal@iiit.ac.in",
+                "anuradha.vattem@research.iiit.ac.in"
             ],
             "type": "Solar Monitoring",
             "sensor_nodes": [
@@ -89,8 +93,10 @@
         {
             "vertical_id": "AQ",
             "incharge": [
-                "spratyay@gmail.com",
-                "lakshmanan.l@research.iiit.ac.in"
+                "rishikesh.bose@research.iiit.ac.in ",
+                "ayu.parmar@research.iiit.ac.in",
+                "sachin.c@iiit.ac.in",
+                "anuradha.vattem@research.iiit.ac.in"
             ],
             "type": "Air Quality Monitoring",
             "sensor_nodes": [
@@ -109,7 +115,7 @@
         {
             "vertical_id": "WM-WD",
             "incharge": [
-                "spratyay@gmail.com"
+                "anuradha.vattem@research.iiit.ac.in"
             ],
             "type": "Water Quality Monitoring",
             "sensor_nodes": [

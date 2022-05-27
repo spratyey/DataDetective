@@ -1,4 +1,5 @@
 from getpass import getpass
+import re
 import ssl
 import smtplib
 import yagmail
@@ -20,6 +21,7 @@ load_dotenv()
 updater = Updater(os.getenv("BOT_TOKEN"),
                   use_context=True)
 files_to_send=[]
+recipients=set()
 
 def daily_summary(dirpath):
     markdown_text = "*Daily Update*\n"
@@ -154,4 +156,17 @@ def send_email(email_text):
         email_text
     ]
     contents.extend(files_to_send)
-    yag.send('pratyay.s@research.iiit.ac.in', 'Daily Update', contents)
+    configure_recipients(email_text)
+    unique_recipients=list(recipients)
+    yag.send(unique_recipients, 'Daily Update', contents)
+
+def configure_recipients(email_text):
+    with open('verticalconfig.json') as json_file:
+        # load config file data
+        config_file_data = json.load(json_file)
+        # for each vertical in the config file, ...
+        for vertical in config_file_data['verticals']:
+            if email_text.find(vertical['vertical_id'])!=-1:
+                # ... add the vertical's email to the list of recipients
+                for incharge in vertical['incharge']:
+                    recipients.add(incharge)

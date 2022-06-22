@@ -138,13 +138,16 @@ def read_verticals():
         # load config file data
         config_file_data = json.load(json_file)
 
+        # reset metadata
+        
+
         # for each vertical in the config file, ...
         for vertical in config_file_data['verticals']:
             print(vertical["vertical_id"])
             # ...make the corresponding local dir
             vert_dir = f'''./output/{vertical['vertical_id']}'''
-            os.mkdir(vert_dir)
-            os.mkdir(vert_dir+"/analytics")
+            os.makedirs(vert_dir, exist_ok=True)
+            os.makedirs(vert_dir+"/analytics", exist_ok=True)
 
 
             # ... and for each sensor in the vertical, ...
@@ -160,6 +163,13 @@ def read_verticals():
             
                 temp_f = open(vert_dir+'/'+sensor_id+'.json') 
                 if len(temp_f.readlines())==0:
+                    metadata = []
+                    if isfile("./output/metadata/dead_nodes.json"):
+                        with open("./output/metadata/dead_nodes.json") as f:
+                            metadata = json.loads(f.read())
+                    metadata.append({"Vertical": vertical["vertical_id"], "Node":sensor_id})
+                    with open("./output/metadata/dead_nodes.json", "w") as f:
+                        json.dump(metadata, f, indent=4, separators=(',', ': '))
                     temp_f.close()
                     os.remove(vert_dir+'/'+sensor_id+'.json')
                     pruned_nodes+=1
@@ -218,7 +228,7 @@ def main():
         elif opt in ('-i', '--interactive'):
             interactive=True
             choice = input(
-                "Select task\n1. Fetch data and cache locally \n2. Time Intervals / Frequency Analysis \n3. NaN detection\n4. Outlier detection\n")
+                "Select task\n1. Fetch data and cache locally \n2. Time Intervals / Frequency Analysis \n3. NaN detection\n4. Outlier detection\n5. Alert sending")
         elif opt in ('-1','--fetch'):
             choice = '1'
         elif opt in ('-2','--freq'):

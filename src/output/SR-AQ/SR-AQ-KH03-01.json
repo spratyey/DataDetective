@@ -1,0 +1,33 @@
+{
+  "channel": {
+    "id": "SR-AQ-KH03-01",
+    "description": "AQ node with CO2, Temperature and Relative Humidity, id=1.0",
+    "field1": "CO2",
+    "field2": "Temperature",
+    "field3": "Relative Humidity",
+    "field4": "VersionInfo"
+  },
+  "feeds": [
+    {
+      "created_at": "2022-06-20T13:13:48+05:30",
+      "field1": 269.0,
+      "field2": 26.03,
+      "field3": 60.87,
+      "field4": "V1.0.05"
+    },
+    {
+      "created_at": "2022-06-20T06:36:01+05:30",
+      "field1": 255.0,
+      "field2": 26.31,
+      "field3": 76.33,
+      "field4": "V1.0.05"
+    },
+    {
+      "created_at": "2022-06-19T23:58:24+05:30",
+      "field1": 372.0,
+      "field2": 25.24,
+      "field3": 64.08,
+      "field4": "V1.0.05"
+    }
+  ]
+}

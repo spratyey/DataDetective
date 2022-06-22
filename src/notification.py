@@ -36,7 +36,7 @@ def daily_summary(dirpath):
                 data.append([dict_val['node'],dict_val['max_gap']])
             sorted_data = sorted(data, key=lambda x: -abs(x[1]))
             # print(sorted_data)
-            markdown_text += "*The most irregularly posting sensors today:*\n"
+            markdown_text += "\n*The most irregularly posting sensors today:*\n"
             email_text += "The most irregularly posting sensors today:\n"
             n = min(5,len(sorted_data))
             for i in range(n):
@@ -48,15 +48,22 @@ def daily_summary(dirpath):
                 json_data = json.load(f)
             data = []
             for dict_val in json_data:
-                data.append([dict_val['node'],dict_val['nan_percent']])
+                data.append([dict_val['node'],dict_val['nan_percent'], dict_val['nan_params']])
             sorted_data = sorted(data, key=lambda x: -abs(x[1]))
             # print(sorted_data)
-            markdown_text += "*Sensors with the most number of nan values today:*\n"
+            markdown_text += "\n*Sensors with the most number of nan values today:*\n"
             email_text += "\nSensors with the most number of nan values today:\n"
             n = min(5,len(sorted_data))
             for i in range(n):
-                markdown_text += "\- "+sorted_data[i][0].replace('-','\-')+"\n"
-                email_text += sorted_data[i][0]+"\n"
+                markdown_text += "\- *"+sorted_data[i][0].replace('-','\-')+"*, ``` \("
+                email_text += sorted_data[i][0]+"    ("
+                for param in sorted_data[i][2]:
+                    markdown_text += param+", "
+                    email_text += param+", "
+                markdown_text=markdown_text[:-2]
+                email_text=email_text[:-2]
+                markdown_text += ")```\n"
+                email_text += ")\n"
 
         if file == 'outlier_metadata.json':
             with open(dirpath+'/'+file, 'r') as f:
@@ -66,12 +73,40 @@ def daily_summary(dirpath):
                 data.append([dict_val['node'],dict_val['num_anomalies']])
             sorted_data = sorted(data, key=lambda x: -abs(x[1]))
             # print(sorted_data)
-            markdown_text += "*Sensors with the most outliers detected today:*\n"
+            markdown_text += "\n*Sensors with the most outliers detected today:*\n"
             email_text += "\nSensors with the most outliers detected today:\n"
             n = min(5,len(sorted_data))
             for i in range(n):
                 markdown_text += "\- "+sorted_data[i][0].replace('-','\-')+"\n"
                 email_text += sorted_data[i][0]+"\n"
+        
+        if file == 'dead_nodes.json':
+            with open(dirpath+'/'+file, 'r') as f:
+                json_data = json.load(f)
+
+            with open('./verticalconfig.json', 'r') as f:
+                vertical_config = json.load(f)
+
+            markdown_text += "\n*Dead nodes today* \(Check dead\_nodes\.json for exact node IDs\):\n"
+            email_text += "\nDead nodes today (Check dead_nodes.json for exact node IDs):\n"
+            for vertical in vertical_config['verticals']:
+                deadnodes = []
+                for item in json_data:
+                    if item['Node'] in vertical['sensor_nodes']:
+                        deadnodes.append(item['Node'])
+                markdown_text += "\- "+vertical['vertical_id'].replace('-', '\-')+" : "+str(
+                    len(deadnodes))+" out of "+str(len(vertical['sensor_nodes']))+" dead"+"\n"
+                email_text += vertical['vertical_id']+" : "+str(
+                    len(deadnodes))+" out of "+str(len(vertical['sensor_nodes']))+" dead\n "
+                # for node in deadnodes:
+                #    email_text += node+", "
+                # email_text = email_text[:-2]+")\n"
+
+
+            
+            #sorted_data = sorted(data, key=lambda x: -abs(x[1]))
+            
+        
     print("(1/3)Posting summary to telegram")
     notify('registered_users.json',markdown_text)
     for file in files_in_dir:
@@ -116,7 +151,9 @@ def send_doc(json_file):
     for chat_id in data['registered_chat_ids']:
         try:
             files_to_send.append('summary.zip')
+            files_to_send.append('./output/metadata/dead_nodes.json')
             updater.bot.send_document(chat_id=chat_id, document=open('summary.zip', 'rb'),caption = "Daily Summary")
+            updater.bot.send_document(chat_id=chat_id, document=open('./output/metadata/dead_nodes.json', 'r'),caption = "Daily Summary")
         except:
             print("Error sending document to chat_id: "+str(chat_id))
             

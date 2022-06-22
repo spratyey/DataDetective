@@ -1,0 +1,394 @@
+[
+    {
+        "Vertical": "WE",
+        "Node": "WE-BN04-00"
+    },
+    {
+        "Vertical": "WE",
+        "Node": "WE-VN04-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-BC00-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-PL01-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-FQ93-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-PH04-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-VN95-02"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-BN01-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-KN98-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-PL92-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-PR01-01"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-AN01-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-PL92-01"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-KN95-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-NM00-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-PL98-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-VN03-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-SB00-01"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-BD01-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-PH01-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-VN92-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-TG00-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-BN01-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-PH01-03"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-SM00-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-VN93-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-TG00-01"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-PH02-01"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-SN00-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-VN95-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-CR-VN01-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-DH00-00"
+    },
+    {
+        "Vertical": "EM",
+        "Node": "EM-NC-PH03-00"
+    },
+    {
+        "Vertical": "SL",
+        "Node": "SL-NI03-00"
+    },
+    {
+        "Vertical": "SL",
+        "Node": "SL-NI03-01"
+    },
+    {
+        "Vertical": "SL",
+        "Node": "SL-VN02-00"
+    },
+    {
+        "Vertical": "SL",
+        "Node": "SL-VN95-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-AN00-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-FG00-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-KN00-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-PH03-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-SN00-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-KH00-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-MG00-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-PL00-00"
+    },
+    {
+        "Vertical": "AQ",
+        "Node": "AQ-VN90-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-VN00-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-VN90-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-VN01-01"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-PH01-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-BN04-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-AD98-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-PL00-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-PH02-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-PH03-00"
+    },
+    {
+        "Vertical": "WM-WD",
+        "Node": "WM-WD-KN00-00"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH00-03"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH00-04"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH00-05"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH01-04"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH01-05"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH01-06"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH01-09"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH01-10"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH01-11"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-02"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-03"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-04"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-06"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-09"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-10"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-11"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-21"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-22"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH02-23"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-03"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-04"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-05"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-12"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-13"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-14"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-15"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-16"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-17"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-18"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-19"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-20"
+    },
+    {
+        "Vertical": "SR-AC",
+        "Node": "SR-AC-KH03-21"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH00-01"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH00-02"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH00-03"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH01-00"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH01-01"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH01-02"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH01-03"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH03-00"
+    },
+    {
+        "Vertical": "SR-AQ",
+        "Node": "SR-AQ-KH03-03"
+    },
+    {
+        "Vertical": "SR-EM",
+        "Node": "SR-EM-KH04-00"
+    }
+]

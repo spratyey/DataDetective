@@ -3,7 +3,7 @@
         {
             "vertical_id": "WE",
             "incharge": [
-                "anuradha.vattem@research.iiit.ac.in"
+                "pratyay.s@research.iiit.ac.in"
             ],
             "type": "Weather Monitoring",
             "sensor_nodes": [
@@ -15,7 +15,7 @@
         {
             "vertical_id": "EM",
             "incharge": [
-                "anuradha.vattem@research.iiit.ac.in"
+                "pratyay.s@research.iiit.ac.in"
             ],
             "type": "Energy Monitoring",
             "sensor_nodes": [
@@ -74,7 +74,7 @@
         {
             "vertical_id": "SL",
             "incharge": [
-                "anuradha.vattem@research.iiit.ac.in"
+                "pratyay.s@research.iiit.ac.in"
             ],
             "type": "Solar Monitoring",
             "sensor_nodes": [
@@ -89,7 +89,7 @@
         {
             "vertical_id": "AQ",
             "incharge": [
-                "anuradha.vattem@research.iiit.ac.in"
+                "pratyay.s@research.iiit.ac.in"
             ],
             "type": "Air Quality Monitoring",
             "sensor_nodes": [
@@ -108,7 +108,7 @@
         {
             "vertical_id": "WM-WD",
             "incharge": [
-                "anuradha.vattem@research.iiit.ac.in"
+                "pratyay.s@research.iiit.ac.in"
             ],
             "type": "Water Quality Monitoring",
             "sensor_nodes": [
@@ -128,7 +128,7 @@
         {
             "vertical_id": "SR-AC",
             "incharge": [
-                "anuradha.vattem@research.iiit.ac.in"
+                "pratyay.s@research.iiit.ac.in"
             ],
             "type": "Smart Room AC Monitoring",
             "sensor_nodes": [
@@ -213,7 +213,7 @@
         {
             "vertical_id": "SR-AQ",
             "incharge": [
-                "anuradha.vattem@research.iiit.ac.in"
+                "pratyay.s@research.iiit.ac.in"
             ],
             "type": "Smart Room AQ Monitoring",
             "sensor_nodes": [
@@ -235,7 +235,7 @@
         {
             "vertical_id": "SR-EM",
             "incharge": [
-                "anuradha.vattem@research.iiit.ac.in"
+                "pratyay.s@research.iiit.ac.in"
             ],
             "type": "Smart Room Energy Monitoring",
             "sensor_nodes": [      

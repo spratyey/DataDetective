@@ -1,5 +1,4 @@
 import os
-from textwrap import indent
 from urllib import response
 from header import *
 from iiith_api_functions import *
@@ -10,8 +9,17 @@ import time
 
 
 def cache_sensor_data (sensor_id, vert_dir):
+    """
+    Fetches data and caches it in the given directory.
+    As in read_verticals(), a maximum of 25 API call attempts are made per sensor.
+    Args:
+        sensor_id: the sensor id of the sensor whose data is to be fetched
+        vert_dir: the directory in which the data is to be cached
+    Returns:
+        None
+    """
     for i in range(25):
-        permission_to_log = i>20
+        permission_to_log = i>20 # Due to the inherent unreliability of the API, each sensor requires 7-8 calls to actually get data (provided the data exists in the first place). Hence, we only start logging after the first 20 (out of 25) attempts are made.
         func_status,data = fetch_data(sensor_id, permission_to_log)
         if func_status == "Success":
             break
@@ -23,7 +31,15 @@ def cache_sensor_data (sensor_id, vert_dir):
 
 
 def fetch_data(sensor_id, permission_to_log):
-
+    """
+    Fetches data from the API and returns it to the caller.
+    Args:
+        sensor_id: the sensor id of the sensor whose data is to be fetched
+        permission_to_log: a boolean indicating whether the function should log the API call failure.
+    Returns:
+        func_status: a string indicating the status of the function
+        data: the data returned by the API
+    """
     function_status="Failure"
 
     # get time interval
@@ -47,18 +63,13 @@ def fetch_data(sensor_id, permission_to_log):
             if permission_to_log:
                 logthis("Error in fetching data for sensor_id: "+sensor_id+"\n"+response)
             function_status="Failure"
-
     except:
         function_status="Failure"
-
-    
     return function_status, data
 
 
 
-
 def write_to_file(data, filename):
-
     # Writing to sample.json
     with open(filename, "w") as outfile:
         outfile.write(data)

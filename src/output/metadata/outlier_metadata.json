@@ -1,0 +1,294 @@
+[
+    {
+        "node": "WE-GS04-00",
+        "num_anomalies": 15
+    },
+    {
+        "node": "EM-CR-NI02-00",
+        "num_anomalies": 6
+    },
+    {
+        "node": "EM-NC-VN01-02",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-VN95-01",
+        "num_anomalies": 1
+    },
+    {
+        "node": "EM-CR-NI02-01",
+        "num_anomalies": 3
+    },
+    {
+        "node": "EM-CR-VN03-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-SS00-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-CR-PR01-00",
+        "num_anomalies": 3
+    },
+    {
+        "node": "EM-NC-VN01-01",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-VN01-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-CR-SB00-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-DC00-00",
+        "num_anomalies": 3
+    },
+    {
+        "node": "EM-NC-SC00-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-AR00-00",
+        "num_anomalies": 3
+    },
+    {
+        "node": "EM-CR-VN02-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-CR-BN01-01",
+        "num_anomalies": 5
+    },
+    {
+        "node": "EM-NC-YM00-00",
+        "num_anomalies": 2
+    },
+    {
+        "node": "EM-NC-NI93-00",
+        "num_anomalies": 0
+    },
+    {
+        "node": "EM-CR-KN95-01",
+        "num_anomalies": 3
+    },
+    {
+        "node": "EM-CR-NI02-02",
+        "num_anomalies": 3
+    },
+    {
+        "node": "SL-VN02-01",
+        "num_anomalies": 22
+    },
+    {
+        "node": "AQ-BN00-00",
+        "num_anomalies": 85
+    },
+    {
+        "node": "WM-WD-VN01-00",
+        "num_anomalies": 1
+    },
+    {
+        "node": "SR-AC-KH02-05",
+        "num_anomalies": 18
+    },
+    {
+        "node": "SR-AC-KH00-07",
+        "num_anomalies": 23
+    },
+    {
+        "node": "SR-AC-KH00-08",
+        "num_anomalies": 27
+    },
+    {
+        "node": "SR-AC-KH03-01",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AC-KH02-16",
+        "num_anomalies": 20
+    },
+    {
+        "node": "SR-AC-KH00-06",
+        "num_anomalies": 27
+    },
+    {
+        "node": "SR-AC-KH01-14",
+        "num_anomalies": 19
+    },
+    {
+        "node": "SR-AC-KH03-06",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AC-KH01-16",
+        "num_anomalies": 23
+    },
+    {
+        "node": "SR-AC-KH01-13",
+        "num_anomalies": 27
+    },
+    {
+        "node": "SR-AC-KH01-02",
+        "num_anomalies": 20
+    },
+    {
+        "node": "SR-AC-KH00-01",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-AC-KH01-18",
+        "num_anomalies": 28
+    },
+    {
+        "node": "SR-AC-KH02-00",
+        "num_anomalies": 22
+    },
+    {
+        "node": "SR-AC-KH02-18",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-AC-KH01-01",
+        "num_anomalies": 17
+    },
+    {
+        "node": "SR-AC-KH02-13",
+        "num_anomalies": 25
+    },
+    {
+        "node": "SR-AC-KH02-01",
+        "num_anomalies": 24
+    },
+    {
+        "node": "SR-AC-KH02-07",
+        "num_anomalies": 23
+    },
+    {
+        "node": "SR-AC-KH01-08",
+        "num_anomalies": 24
+    },
+    {
+        "node": "SR-AC-KH03-09",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AC-KH01-07",
+        "num_anomalies": 25
+    },
+    {
+        "node": "SR-AC-KH01-12",
+        "num_anomalies": 28
+    },
+    {
+        "node": "SR-AC-KH02-15",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-AC-KH02-14",
+        "num_anomalies": 26
+    },
+    {
+        "node": "SR-AC-KH02-20",
+        "num_anomalies": 14
+    },
+    {
+        "node": "SR-AC-KH03-07",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AC-KH01-19",
+        "num_anomalies": 27
+    },
+    {
+        "node": "SR-AC-KH00-02",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-AC-KH01-15",
+        "num_anomalies": 20
+    },
+    {
+        "node": "SR-AC-KH02-24",
+        "num_anomalies": 22
+    },
+    {
+        "node": "SR-AC-KH03-08",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AC-KH02-12",
+        "num_anomalies": 25
+    },
+    {
+        "node": "SR-AC-KH01-03",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-AC-KH00-00",
+        "num_anomalies": 22
+    },
+    {
+        "node": "SR-AC-KH01-00",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-AC-KH02-08",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-AC-KH01-17",
+        "num_anomalies": 22
+    },
+    {
+        "node": "SR-AC-KH03-11",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AC-KH03-10",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AC-KH03-02",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AC-KH02-17",
+        "num_anomalies": 14
+    },
+    {
+        "node": "SR-AC-KH02-19",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-AC-KH03-00",
+        "num_anomalies": 0
+    },
+    {
+        "node": "SR-AQ-KH03-01",
+        "num_anomalies": 1
+    },
+    {
+        "node": "SR-AQ-KH95-00",
+        "num_anomalies": 51
+    },
+    {
+        "node": "SR-AQ-KH00-00",
+        "num_anomalies": 41
+    },
+    {
+        "node": "SR-AQ-KH03-02",
+        "num_anomalies": 51
+    },
+    {
+        "node": "SR-EM-KH04-01",
+        "num_anomalies": 29
+    },
+    {
+        "node": "SR-EM-KH04-02",
+        "num_anomalies": 29
+    }
+]

@@ -7,7 +7,12 @@ from os.path import isfile, join
 
 
 def freq_analysis(dirpath, metadata_permission):
-	
+	"""
+	Performs frequency analysis on a vertical.
+	Args:
+		dirpath: the path to the directory containing the vertical's sensors
+		metadata_permission: whether or not to write metadata to file
+	"""	
 	files_in_dir = [f for f in listdir(dirpath) if isfile(join(dirpath, f))]
 
 	for file in files_in_dir:
@@ -21,6 +26,7 @@ def freq_analysis(dirpath, metadata_permission):
 					timestamp1 = data['feeds'][i]['created_at']
 					timestamp2 = data['feeds'][i+1]['created_at']
 					
+					# find the 'gap lengths' between two consecutive datapoints
 					datetime_obj1 = datetime.datetime.strptime(
 						timestamp1, '%Y-%m-%dT%H:%M:%S%z')
 					datetime_obj2 = datetime.datetime.strptime(
@@ -47,7 +53,12 @@ def freq_analysis(dirpath, metadata_permission):
 
 
 def nan_analysis(dirpath, metadata_permission):
-
+	"""
+	Performs nan analysis on a vertical.
+	Args:
+		dirpath: the path to the directory containing the vertical's sensors
+		metadata_permission: whether or not to write metadata to file
+	"""
 	files_in_dir = [f for f in listdir(dirpath) if isfile(join(dirpath, f))]
 
 	for file in files_in_dir:

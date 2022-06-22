@@ -145,6 +145,10 @@
     },
     {
         "Vertical": "SL",
+        "Node": "SL-VN03-00"
+    },
+    {
+        "Vertical": "SL",
         "Node": "SL-VN95-00"
     },
     {
